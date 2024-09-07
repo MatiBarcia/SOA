@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "EIDER GIOVANNI SOLANO JIMENEZ",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -9, "left": -29.4, "attrs": {} },
+    { "type": "wokwi-mpu6050", "id": "imu1", "top": 272.62, "left": 155.92, "attrs": {} }
+  ],
+  "connections": [
+    [ "imu1:VCC", "uno:5V", "red", [ "v0" ] ],
+    [ "imu1:GND", "uno:GND.2", "black", [ "v0" ] ],
+    [ "imu1:SCL", "uno:A5", "green", [ "v0" ] ],
+    [ "imu1:SDA", "uno:A4", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
